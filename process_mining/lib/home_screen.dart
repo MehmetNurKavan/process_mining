@@ -21,8 +21,14 @@ class _ProcessMiningPageState extends State<ProcessMiningPage> {
       String csvPath = result.files.single.path!;
 
       try {
-        // Python scriptini çalıştır
-        ProcessResult pr = await Process.run('python', ['main.py', csvPath]);
+        // 🛠️ Python dosyasının yeni yolu
+        String pythonScriptPath = './backend/main.py';
+
+        // ✅ Python scriptini çalıştır
+        ProcessResult pr = await Process.run('python', [
+          pythonScriptPath,
+          csvPath,
+        ]);
 
         if (pr.exitCode == 0) {
           var data = jsonDecode(pr.stdout);
@@ -74,9 +80,7 @@ class _ProcessMiningPageState extends State<ProcessMiningPage> {
             ),
             SizedBox(height: 20),
             Expanded(
-              child: SingleChildScrollView(
-                child: SelectableText(_output),
-              ),
+              child: SingleChildScrollView(child: SelectableText(_output)),
             ),
           ],
         ),

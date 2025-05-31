@@ -1,4 +1,4 @@
-Case ID,Activity Name,Start Minute,End Minute
+Case ID,Activity Name,Start Time,End Time
 1,Start,0,5
 1,Review,6,20
 1,Approve,21,30
