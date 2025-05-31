@@ -5,7 +5,6 @@ Bu proje, kullanıcıdan `.csv` dosyası alarak temel süreç madenciliği anali
 ---
 
 ![Ekran görüntüsü 2025-05-31 145250](https://github.com/user-attachments/assets/e74ddbec-fb1b-459b-ab74-a745b1640566)
-![Ekran görüntüsü 2025-05-31 150106](https://github.com/user-attachments/assets/4faedcbb-f78f-4f31-b240-72f37db80535)
 ![Ekran görüntüsü 2025-05-31 145908](https://github.com/user-attachments/assets/617a0a58-53e0-4aeb-a8a6-8e4359f59c6d)
 
 
@@ -92,7 +91,7 @@ flutter run -d chrome  # ya da masaüstü için: flutter run -d windows
 
 ---
 
-## 📷 Örnek Çıktılarpip install -r requirements.txt
+## Yapılan Süreç Madenciliği
 
 * [x] Her Case ID için toplam süre
 * [x] En sık gerçekleşen adımlar
@@ -101,9 +100,9 @@ flutter run -d chrome  # ya da masaüstü için: flutter run -d windows
 
 ---
 
-## 📌 Notlar
+## Notlar
 
-* Pytohn çaliştirma
+* Python kodlarını çalıştırmak için
 
 ```python
 pip install -r requirements.txt
